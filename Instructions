@@ -1,0 +1,41 @@
+MidnightHatchlings
+==================
+
+PHP, MYSQL, Joomla Database Egg Catching
+
+Current Function:
+Reads Images from the server
+Places Images on the screen at set locations
+Causes Images to fade out and back in with a new image
+
+Image fading is not in sync, meaning that the images all fade out and in at different times
+
+Needed Functionality:
+Syncronization 
+    This needs to be syncronized, so that everyone viewing the page at that time is all showing the same thing
+
+If an image is clicked by someone signed in:
+   The image needs to fade out, and a new image needs to fade in
+   Data needs to be sent to a table in the database that includes:
+       A unique ID
+       Path to the image on the server
+       A name
+       Who clicked the image
+       When the image was clicked (date and time)
+       Gender (random)
+   The user who clicked it needs to be sent to a different webpage on the server
+       The webpage they are sent to on the server needs to recieve a reference to the new entry in the database
+      
+If an image is clicked by someone who is not signed in:
+    Nothing happens
+    
+If an image is clicked by two people:
+    Only the first person who clicked it triggers the clicked functions
+    The second person should get a pop-up that informs them that the image is "already fading into the mist"
+    
+The webpage can be accessed at: 71.145.242.147
+This is not a fully hosted webpage, meaning that the page may be slow to load, or may not load at all your first couple of tries
+If you choose to work on this project, you will recieve login information to the database and the server.
+
+       
+   
